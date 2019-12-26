@@ -2,7 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+function HolaMundo(nombre){
+  var presentacion = <h2>Hola soy {nombre}</h2>
+  return presentacion;
+}
+
 function App() {
+  var nombre="Jimmy";
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +17,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        {HolaMundo(nombre)}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -23,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
