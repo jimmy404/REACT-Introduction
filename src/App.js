@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MiComponente from './components/MiComponente';
 
 function HolaMundo(nombre, edad){
   var presentacion = (
@@ -16,19 +17,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        {HolaMundo(nombre, 30)}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+            {HolaMundo(nombre, 30)}
+        <section className="componentes">
+          <MiComponente />
+        </section>
       </header>
     </div>
   );
