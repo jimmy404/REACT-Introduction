@@ -4,11 +4,12 @@ import './App.css';
 
 
 function HolaMundo(nombre, edad){
-  var presentacion =
+  var presentacion = (
     <div>
       <h2>Hola soy {nombre}</h2>
       <h3>Tengo {edad} años</h3>
     </div>
+    );
   return presentacion;
 }
 
