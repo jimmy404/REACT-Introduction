@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class MiComponente extends React.Component{
+class MiComponente extends Component{
     render(){
         return(
             <h1>Hola, soy el componente llamado: MiComponente</h1>
