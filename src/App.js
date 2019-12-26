@@ -4,7 +4,9 @@ import './App.css';
 
 
 function HolaMundo(nombre){
-  var presentacion = <h2>Hola soy {nombre}</h2>
+  var presentacion =
+  <h2>Hola soy {nombre}</h2>
+  <h3>Tengo {edad} años</h3>
   return presentacion;
 }
 
@@ -17,7 +19,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        {HolaMundo(nombre)}
+        {HolaMundo(nombre), 12}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -31,4 +33,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
